@@ -35,7 +35,7 @@
 우리 솔루션이 고객의 근본적 문제를 어떻게 해결하고 어떤 결과 가치를 창출하는지 보여주는 직관적 흐름입니다.
 
 ```mermaid
-flowchart LR
+flowchart TD
     %% 스타일 정의
     classDef pain fill:#FFEbee,stroke:#EF5350,stroke-width:2px;
     classDef solution fill:#E8F5E9,stroke:#66BB6A,stroke-width:2px;
