@@ -1,4 +1,4 @@
-# CorpBrain MVP — PRD v0.1
+# CorpBrain MVP — PRD v0.2
 - Owner 팀: Product Team
 - 최종 업데이트: 2026-05-02
 - 관련 문서: VPS, Deep Research, MVP Spec, Revenue Model, Feature Map
