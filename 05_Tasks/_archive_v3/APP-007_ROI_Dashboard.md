@@ -22,6 +22,9 @@ labels: 'feature, priority:medium, frontend'
 - **Given**: Manager 권한 사용자가 대시보드 상단의 ROI 리포트 아이콘을 클릭했을 때
 - **When**: 화면이 로드되면
 - **Then**: API-R004에서 받아온 데이터가 직관적인 차트와 숫자로 렌더링되어 "이번 달 총 15시간 절감, 50만원 비용 효과" 등의 문구가 화면에 표시되어야 한다.
+- **Given**: 신규 온보딩 직후 아직 승인된 초안이 0건인 워크스페이스에서
+- **When**: 사용자가 ROI 대시보드에 최초 접근하면
+- **Then**: 빈 차트 대신 "아직 데이터가 충분하지 않습니다. 첫 번째 초안을 승인하면 성과 지표가 집계됩니다." 등의 Empty State 안내 UI가 표시되어야 한다.
 
 ## 🛡️ Constraints (NFRs)
 - 성능 제약: 차트 라이브러리가 초기 로딩(Bundle Size)에 큰 영향을 주지 않도록, `next/dynamic` 등을 활용한 지연 로딩(Lazy Loading) 또는 Code Splitting 기법을 적용해야 한다.

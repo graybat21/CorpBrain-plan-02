@@ -12,9 +12,9 @@ labels: 'feature, priority:high, qa'
 - SRS 문서: §4.2.3 (REQ-NF-015)
 
 ## 📝 Task Breakdown
-- [ ] SonarQube 또는 Snyk 등 정적 어플리케이션 보안 테스트(SAST) 도구를 파이프라인에 연동.
-- [ ] ZAP(Zed Attack Proxy) 등을 활용한 동적 보안 스캐닝(DAST)으로 주요 API 엔드포인트 점검.
-- [ ] `npm audit`을 통한 서드파티 패키지(Dependencies)의 취약성 점검.
+- [ ] Trivy를 활용한 컨테이너/코드 정적 보안 테스트(SAST) CI 파이프라인 연동 (`trivy fs --severity HIGH,CRITICAL .`).
+- [ ] ZAP(Zed Attack Proxy) Baseline Scan을 활용한 동적 보안 스캐닝(DAST)으로 주요 API 엔드포인트 점검 (`zap-baseline.py -t <target_url>`).
+- [ ] `npm audit --audit-level=high`을 통한 서드파티 패키지(Dependencies)의 취약성 점검.
 - [ ] 스캐닝 결과 발견된 Critical / High 등급의 보안 결함 수정 패치 반영.
 
 ## ✅ Acceptance Criteria (BDD)
